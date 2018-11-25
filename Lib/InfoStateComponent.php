@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-namespace FacturaScripts\Core\Lib\Dashboard;
+namespace FacturaScripts\Plugins\Dashboard\Lib;
 
 use FacturaScripts\Core\Model;
 
@@ -127,7 +127,7 @@ class InfoStateComponent extends BaseComponent implements ComponentInterface
      */
     private function getModelInfo($modelName)
     {
-        $model = self::DIR_MODEL . $modelName;
+        $model = self::DIR_MODEL_NUCLEO . $modelName;
         $modelObj = new $model();
 
         return ['table' => $modelObj->tableName(), 'url' => $modelObj->url('list')];

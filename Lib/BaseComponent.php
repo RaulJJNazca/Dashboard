@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-namespace FacturaScripts\Core\Lib\Dashboard;
+namespace FacturaScripts\Plugins\Dashboard\Lib;
 
 use FacturaScripts\Core\Base\DataBase;
 use FacturaScripts\Core\Model;
@@ -29,8 +29,9 @@ use FacturaScripts\Core\Model;
 class BaseComponent
 {
 
-    const DIR_MODEL = 'FacturaScripts\\Core\\Model\\';
-    const DIR_COMPONENTS = 'FacturaScripts\\Core\\Lib\\Dashboard\\';
+    const DIR_MODEL_NUCLEO = 'FacturaScripts\\Core\\Model\\';
+    const DIR_MODEL = 'FacturaScripts\\Plugins\\Dashboard\\Model\\';
+    const DIR_COMPONENTS = 'FacturaScripts\\Plugins\\Dashboard\\Lib\\';
     const SUFIX_COMPONENTS = 'Component';
 
     /**
